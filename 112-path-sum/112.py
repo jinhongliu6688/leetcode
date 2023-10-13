@@ -9,15 +9,15 @@ class Solution:
         if not root:
             return False
 
-        def dfs(path, root):
+        def dfs(cur_sum, root):
             if not root.left and not root.right:
-                return sum(path + [root.val]) == targetSum
+                return cur_sum + root.val == targetSum
 
             if root.left and root.right:
-                return dfs(path + [root.val], root.left) or dfs(path + [root.val], root.right)
+                return dfs(cur_sum + root.val, root.left) or dfs(cur_sum + root.val, root.right)
             elif root.left:
-                return dfs(path + [root.val], root.left)
+                return dfs(cur_sum + root.val, root.left)
             elif root.right:
-                return dfs(path + [root.val], root.right)
+                return dfs(cur_sum + root.val, root.right)
 
-        return dfs([], root)
+        return dfs(0, root)
