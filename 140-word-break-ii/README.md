@@ -1,0 +1,2 @@
+- DFS
+- Only append the word to the path if current string starts with that word. And pass the updated current string to the function (cur_str[len(word):])
