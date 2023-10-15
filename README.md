@@ -1,6 +1,6 @@
 # LeetCode
 
-My leetcode INFO: https://leetcode.com/ivan6688/
+My leetcode info: https://leetcode.com/ivan6688/
 
 Big(O): https://www.bigocheatsheet.com/
 
