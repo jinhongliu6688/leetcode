@@ -1,0 +1,3 @@
+- Use container to store valid nodes
+- Pop the duplicate nodes
+- Link the remaining valid nodes
