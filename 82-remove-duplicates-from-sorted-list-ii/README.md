@@ -1,3 +1,5 @@
+(IMPORTANT: Make sure to link the last valid node to None)
+
 Method 1:
 - Use container to store valid nodes
 - Pop the duplicate nodes
