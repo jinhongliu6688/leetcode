@@ -1,4 +1,4 @@
-Use two queues
-queue 1 stores the nodes whose values are less than x
-queue 2 stores the nodes whose values are >= x
-Traverse the two queues and link the nodes
+- Use two queues
+- queue 1 stores the nodes whose values are less than x
+- queue 2 stores the nodes whose values are >= x
+- Traverse the two queues and link the nodes
