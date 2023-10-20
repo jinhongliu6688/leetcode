@@ -1,0 +1,2 @@
+- Use slow and fast pointer
+- Important: while fast and fast.next
