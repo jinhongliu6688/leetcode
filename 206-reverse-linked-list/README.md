@@ -1,0 +1,1 @@
+- Use stack or reverse the nodes directly
