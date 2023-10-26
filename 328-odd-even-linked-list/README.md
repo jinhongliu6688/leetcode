@@ -1,0 +1,1 @@
+- if head is None or head.next is None (linked list has only 1 valid node), return head directly
