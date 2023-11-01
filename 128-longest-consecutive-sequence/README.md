@@ -1,0 +1,2 @@
+- Use set to remove duplicate number
+- Sort the nums array
