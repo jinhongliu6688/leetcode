@@ -17,3 +17,16 @@ class Solution:
             # if the current number does not exist in the dictionary, add the current number to the dictionary along with its index
             else:
                 dict_1[num] = i
+                
+# Time complexity: O(n)
+# Space complexity: O(n)
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        dict_1 = {}
+
+        for i, num in enumerate(nums):
+            if target - num in dict_1:
+                return [i, dict_1[target - num]]
+            else:
+                dict_1[num] = i
