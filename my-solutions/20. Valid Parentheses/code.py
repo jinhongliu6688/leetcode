@@ -34,13 +34,13 @@ class Solution:
             # if the stack is empty, append the letter to the stack 
             if not stack:
                 stack.append(l)
-            # if the current letter is (, check if the top element in the stack is ). If it is, pop the top element
+            # if the current letter is ), check if the top element in the stack is (. If it is, pop the top element
             elif l == ")" and stack[-1] == "(":
                 stack.pop()
-            # if the current letter is [, check if the top element in the stack is ]. If it is, pop the top element
+            # if the current letter is ], check if the top element in the stack is [. If it is, pop the top element
             elif l == "]" and stack[-1] == "[":
                 stack.pop()
-            # if the current letter is {, check if the top element in the stack is }. If it is, pop the top element
+            # if the current letter is }, check if the top element in the stack is {. If it is, pop the top element
             elif l == "}" and stack[-1] == "{":
                 stack.pop()
             # if the above conditions do not met, add the letter to the stack
