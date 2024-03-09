@@ -21,3 +21,21 @@ class Solution:
                 return False
             previous_length = len(s)
         return True
+
+# time: O(n)
+# space: O(n)
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = collections.deque()
+        for l in s:
+            if not stack:
+                stack.append(l)
+            elif l == ")" and stack[-1] == "(":
+                stack.pop()
+            elif l == "]" and stack[-1] == "[":
+                stack.pop()
+            elif l == "}" and stack[-1] == "{":
+                stack.pop()
+            else:
+                stack.append(l)
+        return len(stack) == 0
