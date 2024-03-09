@@ -32,3 +32,32 @@ public class Solution {
         return num;
     }
 }
+
+public class Solution {
+    public int RomanToInt(string s) {
+        int num = 0;
+
+        Dictionary<char, int> dict_1 = new Dictionary<char, int>();
+        dict_1.Add('I', 1);
+        dict_1.Add('V', 5);
+        dict_1.Add('X', 10);
+        dict_1.Add('L', 50);
+        dict_1.Add('C', 100);
+        dict_1.Add('D', 500);
+        dict_1.Add('M', 1000);
+
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (i < s.Length - 1 && dict_1[s[i]] < dict_1[s[i + 1]])
+            {
+                num -= dict_1[s[i]];
+            }
+            else
+            {
+                num += dict_1[s[i]];
+            }
+        }
+
+        return num;
+    }
+}
