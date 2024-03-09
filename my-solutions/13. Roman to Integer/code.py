@@ -108,7 +108,7 @@ class Solution:
 
         # Iterate the letters in string s. If the current index is not the last index and the current symbol's value is less than next symbol's value, subtract the current value from num. Otherwise, add the current symbol's value to num.
         for i, letter in enumerate(s):
-            if i < len(s) - 1 and sym_val[s[i]] < sym_val[s[i + 1]]:
+            if i < len(s) - 1 and sym_val[letter] < sym_val[s[i + 1]]:
                     num -= sym_val[letter]
             else:
                 num += sym_val[letter]
