@@ -1,3 +1,6 @@
+# time: O(n)
+# space: O(1)
+
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         # initialize insert_index to 1
