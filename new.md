@@ -7,3 +7,4 @@
 | 20. Valid Parentheses | Easy | ✅ | ✅ | ✅ |
 | 21. Merge Two Sorted Lists | Easy | ✅ | ✅ | ✅ |
 | 26. Remove Duplicates from Sorted Array | Easy | ✅ | ✅ | ✅ |
+| 27. Remove Element | Easy | ✅ | ✅ |  |
